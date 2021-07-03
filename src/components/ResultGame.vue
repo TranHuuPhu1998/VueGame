@@ -78,7 +78,6 @@ export default {
   },
   created() {
     this.getPlayer()
-   
     setTimeout(()=>{
       document.querySelector('.img-congralution').style.display = "none"
     },5000)

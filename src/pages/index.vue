@@ -12,6 +12,10 @@
                 
                 <p class="text-play">Play with Ping-pong</p>
             </router-link>
+             <router-link class="border" to="/learning-english">
+              <img class="logo-game" src="../assets/learning.jpg" alt="">
+                <p class="text-play">Learning English</p>
+            </router-link>
         </div>
     </div>
   </div>
@@ -36,6 +40,8 @@ export default {
     }
     #homepage .logo-game{
         width: 200px;
+        height: 150px;
+        object-fit: contain;
     }
     #homepage .border {
         border: solid 1px rgb(221, 210, 210);

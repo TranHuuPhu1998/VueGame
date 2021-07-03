@@ -7,7 +7,7 @@
                             <h4 class="modal-title" id="myModalLabel">Please enter a name to start the game</h4>
                         </div>
                         <div class="modal-body">
-                            <input ref="input" type="text" v-model="userName" name="userName" placeholder="user name">
+                            <input class="w-full" ref="input" type="text" v-model="userName" name="userName" placeholder="user name">
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-primary" @click="onSaveClose">Save changes</button>
@@ -60,6 +60,9 @@
     overflow: hidden;
     -webkit-overflow-scrolling: touch;
     outline: 0;
+}
+.w-full {
+    width: 100%;
 }
 .fade {
     opacity: 0;

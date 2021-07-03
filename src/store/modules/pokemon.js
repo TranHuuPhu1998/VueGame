@@ -9,7 +9,6 @@ const pokemon = {
 		players: state => state.players,
 	},
 	actions: {
-	
 		async addPlayer({ commit }, player) {
 			try {
 				await axios.post('https://5e68a46bd426c00016b7e272.mockapi.io/data/player', player)

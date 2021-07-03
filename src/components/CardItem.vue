@@ -6,7 +6,7 @@
             @click="toogleFlipped()"
         >
             <div class="card-face card-front"></div>
-                <div class="card-face card-back">
+            <div class="card-face card-back">
                     <div
                         class="card-content"
                         :style="{

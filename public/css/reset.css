@@ -24,7 +24,10 @@ time, mark, audio, video {
 :focus {
     outline: 0;
 }
-
+p {
+    margin-bottom: 0 !important;
+    font-family: "Cabin Sketch", cursive;
+}
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
