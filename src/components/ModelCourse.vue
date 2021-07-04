@@ -4,10 +4,12 @@
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h4 class="modal-title" id="myModalLabel">Please enter a name to start the game</h4>
+                            <h4 class="modal-title" id="myModalLabel">Please enter a name of Course</h4>
                         </div>
                         <div class="modal-body">
-                            <input class="w-full" ref="input" type="text" v-model="userName" name="userName" placeholder="user name">
+                            <input class="w-full form-check-input" ref="input" type="text" v-model="name" name="name" placeholder="name of course">
+                            <input class="w-full form-check-input" ref="input" type="text" v-model="type" name="type" placeholder="type of course">
+                            <input class="w-full form-check-input" ref="input" type="textarea" v-model="description" name="name" placeholder="description of course">
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-primary" @click="onSaveClose">Save changes</button>
@@ -24,7 +26,9 @@
     export default {
         data() {
             return {
-                userName: ''
+                name: '',
+                description : '',
+                type : ''
             }
         },
         methods: {
@@ -32,7 +36,12 @@
                 this.$refs.input.focus()
             },
             onSaveClose(){
-                this.$emit('SaveClose',this.userName)
+                let course = {
+                    name : this.name,
+                    description : this.description,
+                    type : this.type
+                }
+                this.$emit('SaveClose',course)
             },
             onCancel(){
                 this.$emit('onCancel')
@@ -99,10 +108,6 @@
     -webkit-transition: -webkit-transform .3s ease-out;
     -o-transition: -o-transform .3s ease-out;
     transition: transform .3s ease-out;
-    -webkit-transform: translate(0,150%);
-    -ms-transform: translate(0,150%);
-    -o-transform: translate(0,150%);
-    transform: translate(0,150%);
 }
 .modal-dialog {
     position: relative;
@@ -171,6 +176,8 @@
 }
 .modal-body input {
     border: none;
+    border-bottom: 1px solid #cccccc;
+    height: 50px;
 }
 .modal-title {
     color: blueviolet;
@@ -185,6 +192,7 @@
     margin: 10px auto;
     display: inline-block;
     vertical-align: middle;
+    top:25%;
     }
     .modal-dialog {
     width: 600px;

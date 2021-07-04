@@ -18,6 +18,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+    font-family: "Cabin Sketch", cursive;
 }
 
 /* make sure to set some focus styles for accessibility */
@@ -26,8 +27,8 @@ time, mark, audio, video {
 }
 p {
     margin-bottom: 0 !important;
-    font-family: "Cabin Sketch", cursive;
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {

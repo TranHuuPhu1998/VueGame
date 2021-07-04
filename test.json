@@ -3,112 +3,112 @@
     "createdAt": "2021-07-03T04:55:44.742Z",
     "enValue": "Handling",
     "vnvalue": "Sự điều khiển",
-    "type": "type 1",
+    "type": "evtovn",
     "id": "1"
   },
   {
     "createdAt": "2021-07-03T07:43:20.763Z",
     "enValue": "Event",
     "vnvalue": "Sự Kiện",
-    "type": "type 2",
+    "type": "evtovn",
     "id": "2"
   },
   {
     "createdAt": "2021-07-03T01:24:16.590Z",
     "enValue": "Listening",
     "vnvalue": "Lắng Nghe",
-    "type": "type 3",
+    "type": "evtovn",
     "id": "3"
   },
   {
     "createdAt": "2021-07-03T06:18:01.114Z",
     "enValue": "to",
     "vnvalue": "Đến",
-    "type": "type 4",
+    "type": "evtovn",
     "id": "4"
   },
   {
     "createdAt": "2021-07-03T05:24:50.888Z",
     "enValue": "directive",
     "vnvalue": "Chỉ thị",
-    "type": "type 5",
+    "type": "evtovn",
     "id": "5"
   },
   {
     "createdAt": "2021-07-02T20:57:31.920Z",
     "enValue": "triggered",
     "vnvalue": "Thay thế",
-    "type": "type 6",
+    "type": "evtovn",
     "id": "6"
   },
   {
     "createdAt": "2021-07-03T04:44:05.285Z",
     "enValue": "Method",
     "vnvalue": "phương pháp",
-    "type": "type 7",
+    "type": "evtovn",
     "id": "7"
   },
   {
     "createdAt": "2021-07-02T20:50:46.953Z",
     "enValue": "Instead",
     "vnvalue": "Thay thế",
-    "type": "type 8",
+    "type": "evtovn",
     "id": "8"
   },
   {
     "createdAt": "2021-07-03T12:38:12.890Z",
     "enValue": "Although",
     "vnvalue": "Mặc dù",
-    "type": "type 9",
+    "type": "evtovn",
     "id": "9"
   },
   {
     "createdAt": "2021-07-02T18:16:40.254Z",
     "enValue": "would ",
     "vnvalue": "sẽ",
-    "type": "type 10",
+    "type":"evtovn",
     "id": "10"
   },
   {
     "createdAt": "2021-07-03T04:39:53.178Z",
     "enValue": "matters",
     "vnvalue": "vấn đề",
-    "type": "type 11",
+    "type":"evtovn",
     "id": "11"
   },
   {
     "createdAt": "2021-07-03T04:39:53.178Z",
     "enValue": "offers ",
     "vnvalue": "Đề nghị",
-    "type": "type 11",
+    "type":"evtovn",
     "id": "12"
   },
   {
     "createdAt": "2021-07-03T04:39:53.178Z",
     "enValue": "provides",
     "vnvalue": "cung cấp",
-    "type": "type 11",
+    "type":"evtovn",
     "id": "13"
   },
   {
     "createdAt": "2021-07-03T04:39:53.178Z",
     "enValue": "aliases ",
     "vnvalue": "bí danh",
-    "type": "type 11",
+    "type":"evtovn",
     "id": "14"
   },
   {
     "createdAt": "2021-07-03T04:39:53.178Z",
     "enValue": "most",
     "vnvalue": "phần lớn",
-    "type": "type 11",
+    "type":"evtovn",
     "id": "15"
   },
   {
     "createdAt": "2021-07-03T04:39:53.178Z",
     "enValue": "commonly",
     "vnvalue": "thông thương",
-    "type": "type 11",
+    "type":"evtovn",
     "id": "16"
   }
 ]

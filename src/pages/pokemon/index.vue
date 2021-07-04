@@ -20,6 +20,7 @@
       <Popup 
         v-if="statusModel === true"
         @SaveClose="handleSaveClose"  
+        @onCancel="handleOnCancel"
       />
   </div>
 </template>
@@ -79,6 +80,9 @@ export default {
     handleSaveClose(value) {
       this.player.name = value;
       this.statusModel = false;
+    },
+    handleOnCancel(){
+      this.$router.push('/')  
     }
   }
 }

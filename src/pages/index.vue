@@ -55,7 +55,7 @@ export default {
         margin: 20px;
     }
     #homepage .text-play {
-        font-size: 1rem;
+        font-size: 1.2rem;
         color: white;
         padding: 10px;
     }
@@ -66,6 +66,7 @@ export default {
     }
     #homepage .text-chose {
         font-size: 2rem;
+            font-family: "Cabin Sketch", cursive;
     }
 
 </style>

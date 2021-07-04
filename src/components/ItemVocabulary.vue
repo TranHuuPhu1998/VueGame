@@ -1,9 +1,13 @@
 <template>
-    <div class="card-wapper"  :class="{'is-flipped' : check}">
+    <div class="card-wapper" :class="{'is-flipped' : check}">
         <form 
             v-on:submit.prevent="onCheck(vocabulary.vnvalue)" 
             class="card-face card-front" >
-            <p class="text">{{vocabulary.enValue}}</p>
+            <p class="text">{{vocabulary.enValue}} 
+                <span class="void" @click="onPlayVolume(vocabulary.enValue)">
+                    <i class="bi bi-volume-up-fill"></i>
+                </span>
+            </p>
             <input placeholder="vietnamese" v-model="mdvnValue" class="from-control" type="text">
             <input v-on:keyup.enter="onCheck(vocabulary.vnvalue)"  class="btn" type="submit" value="check">
         </form>
@@ -15,11 +19,14 @@
     </div>
 </template>
 <script>
+// import { useRoute } from 'vue-router'
+
 export default {
     data() {
         return {
             mdvnValue: '',
-            check:false
+            check:false,
+            type:''
         }
     },
     props: {
@@ -30,24 +37,35 @@ export default {
     },
     methods: {
         onCheck(value,event) {
-          
             if (event) {
                 event.preventDefault()
             }
-             console.log("🚀 ~ file: ItemVocabulary.vue ~ line 31 ~ onCheck ~ true", value,this.mdvnValue)
             if(value.toUpperCase().trim() === this.mdvnValue.toUpperCase().trim()){
                 this.check = true
             }else {
                 this.check = false
             }
+        },
+        onPlayVolume(message){
+            let msg = new SpeechSynthesisUtterance(message)
+            let voices = window.speechSynthesis.getVoices()
+            msg.voice = voices[0]
+            window.speechSynthesis.speak(msg)
         }
     },
+
 }
 </script>
 <style lang="css" scoped>
+    .text {
+        padding-top: 5px;
+    }
+    .void {
+        float: right;
+        padding-right: 10px;
+    }
     .card-face {
         position: absolute;
-        
         width: 100%;
         height: 100%;
         overflow: hidden;
@@ -100,9 +118,9 @@ export default {
        transform: rotateY(-180deg);
     }
     .btn {
+        margin-top: 0.5rem;
         position: relative;
         color: #7b8ab8;
-        margin-top: 5px;
         border-radius: 50rem;
         background-color: #d9e3f1;
         padding: 3px 30px;
@@ -111,8 +129,9 @@ export default {
         transition: background-color .15s ease-in-out, border .15s ease-in-out, box-shadow .15s ease-in-out, color .15s ease-in-out;
     }
     .from-control {
+        margin-top: 0.5rem;
         display: block;
-            text-indent: 7px;
+        text-indent: 7px;
         width: 100%;
         font-size: 1rem;
         font-weight: 400;
