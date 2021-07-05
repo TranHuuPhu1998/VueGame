@@ -1,12 +1,16 @@
 <template>
   <div>
     <div class="cursor"></div>
-    <router-view />
+    <router-view></router-view>
+    <PingPong/>
   </div>
 </template>
 
 <script>
+import PingPong from './pages/ping-pong'
 export default {
+  name:"app",
+  components : {PingPong},
   mounted: function () {
     const cursor = document.querySelector(".cursor");
 
